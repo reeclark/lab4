@@ -7,24 +7,20 @@ public class Powers {
 		// Declare variables.
 		Scanner scanner = new Scanner(System.in);
 		int number, i = 0;
-		int[][] table = new int[2][3];
 		String cont = "";
-
-		// Get user input.
+		
 		do {
+			// Get user input.
 			System.out.println("Enter an integer:");
 			number = scanner.nextInt();
 
 			// Print each number inputed.
-			//System.out.println("Number" + '\n' + "======");
-			System.out.printf("%1$-30s/n", "%2$10s/n", "%3$10.2s/n", "Number", "Squared", "Cubed");
-			//System.out.println("Number" + "            Squared " + "           Cubed");
-			//2System.out.println("======" + "            ======"  + "             ======");
+			System.out.printf("%-10s %-12s %-14s\n", "Number", "Squared", "Cubed");
+			System.out.printf("%-10s %-12s %-14s\n", "======", "======", "======");
 			
 			i = 1;
 			while (i <= number) {
-				//add printf or some formatting here
-				System.out.println(i + "                 " + (i * i) + "                  " + (i * i * i));
+				System.out.printf("%-10d %-12d %-14d\n", i, i * i, i * i * i);
 
 				i = i + 1;
 			}
