@@ -6,7 +6,7 @@ public class Powers {
 	public static void main(String[] args) {
 		// Declare variables.
 		Scanner scanner = new Scanner(System.in);
-		int number, i = 0;
+		long number, i = 0;
 		String cont = "";
 		
 		do {
